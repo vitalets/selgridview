@@ -124,18 +124,18 @@
             if(!keys) return;
             if(!$.isArray(keys)) keys = [keys];
 
-            var parsed = this.selGridView('parseUrl');
+            var parsed = this.selGridView('parseUrl'),
                 pageKeys = this.find(".keys span"),
                 rows = this.find("tbody tr");
                 
              //add to url params
              $.each(keys, function(index, value) {
-                 if(!$.inArray(value, parsed.selected)) {
+                 if($.inArray(value, parsed.selected) === -1) {
                     parsed.selected.push(value); 
                     
                     //select row on grid
                     pageKeys.each(function (i) {
-                        if(pageKeys[i].text() == value) {
+                        if($(this).text() == value) {
                             rows.eq(i).click();
                         }
                     });
