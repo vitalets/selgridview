@@ -1,7 +1,7 @@
 <?php
                  
 /**
-* BootSelGridView v2.0
+* BootSelGridView v2.2
 * 
 * for usage with twitter bootstrap Yii components
 * 
@@ -15,9 +15,9 @@
 * 
 */
 
-Yii::import('bootstrap.widgets.BootGridView');
+Yii::import('bootstrap.widgets.TbGridView');
 
-class BootSelGridView extends BootGridView
+class BootSelGridView extends TbGridView
 {
     /**
     * GET param name to pass selected row(s)
