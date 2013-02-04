@@ -8,7 +8,7 @@
 Yii::import('zii.widgets.grid.CGridView');
 
 /**
-* SelGridView v2.2
+* SelGridView v2.3
 * 
 * SelGridView remembers selected rows of gridview when sorting or navigating by pages. 
 * Also it can select particular rows by GET param when page is loading

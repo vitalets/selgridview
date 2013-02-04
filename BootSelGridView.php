@@ -1,7 +1,7 @@
 <?php
                  
 /**
-* BootSelGridView v2.2
+* BootSelGridView v2.3
 * 
 * for usage with twitter bootstrap Yii components
 * 
