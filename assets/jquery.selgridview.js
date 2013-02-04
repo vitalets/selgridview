@@ -29,8 +29,8 @@
                     selection = $('#' + id).selGridView('getAllSelection'),
                     params = $.deparam.querystring(options.url);
 
-                    if(!selection.length) {         //if nothing selected in whole grid -> delete selVar from request
-                        if(params[selVar]) delete params[selVar];
+                    if(!selection.length) {  //if nothing selected in whole grid -> clear selVar in request
+                        params[selVar] = [];
                     } else {                //otherwise set selVar to array of selected keys
                         params[selVar] = selection;
                     }                    
